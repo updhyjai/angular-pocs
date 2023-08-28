@@ -1,0 +1,14 @@
+.title{
+    background-color: yellow;
+    color: darkslategray;
+    font-size: large;
+}
+.description{
+    background-color: lightyellow;
+    font-size: small;
+}
+button{
+    background-color: orange;
+    color:antiquewhite;
+    border: 1px solid orange;
+}

@@ -1,0 +1,10 @@
+
+<div class="container">
+    <div class="row">
+        <app-game-component (onEventFired)="handleEventFired($event)"></app-game-component>
+    </div>
+    <div class="row">
+            <app-even-component *ngFor="let evenNum of evenNumbers" [evenNumber]="evenNum"></app-even-component>
+            <app-odd-component  *ngFor="let oddNum of oddNumbers"  [oddNumber]="oddNum"></app-odd-component>
+    </div>
+</div>

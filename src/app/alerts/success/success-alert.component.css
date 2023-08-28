@@ -1,0 +1,14 @@
+.title{
+    background-color: greenyellow;
+    color: darkslategray;
+    font-size: large;
+}
+.description{
+    background-color: lightgreen;
+    font-size: small;
+}
+button{
+    background-color: darkgreen;
+    color:antiquewhite;
+    border: 1px solid darkgreen;
+}

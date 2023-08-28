@@ -1,0 +1,17 @@
+<div class="container">
+    <hr />
+    <div class="row"><div class="col">Hi {{userName}}, Hope you are doing well!</div></div>
+
+    <input type="text" placeholder="Set user name" [(ngModel)] = "userName" />
+    <hr />
+    <div class="row">
+        <div class="col-xs-8">
+            <input type="text" (input)="onInputServerName($event)" />
+        </div>
+        <div class="col-xs-4">
+            <button class="btn btn-primary" (click)="onSubmitServer( )">Submit</button>
+        </div>
+    </div>
+    <hr />
+    <div class="row"><div class="col">{{error.length ? error : getServers()}}</div></div>
+</div>

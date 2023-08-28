@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs">
+        <button class="btn btn-primary" (click)="onToggle()">Display Details</button>
+        <p *ngIf="showPasswordToggle">Secret Password = Tuna</p>
+    </div>
+    </div>
+    <div *ngFor="let log of operationLogs" class="row">
+        <p [ngStyle]="isIndexGreaterThanFive(log) && { 'background-color': 'blue'}" [ngClass]="isIndexGreaterThanFive(log) && 'whiteText'">{{log}}</p>
+    </div>
+</div>

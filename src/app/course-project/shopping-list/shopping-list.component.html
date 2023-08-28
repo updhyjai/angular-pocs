@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-xs-12">
+        <app-shopping-edit (onIngredientAdded)="handleAddingIngredient($event)"></app-shopping-edit>
+    </div>
+</div>
+
+    <hr />
+    <div class="row">
+    <div class="col-xs-12">
+
+   <ul class="list-group">
+    <a href="#" class="list-group-item" *ngFor="let ingredient of ingredients">
+        <h5 class="list-group-item-heading">{{ingredient.name}}</h5>
+        <p class="list-group-item-text">{{ingredient.amount}}</p>
+    </a>
+   </ul>
+    </div>
+</div>
